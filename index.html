@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <title>Workout Timer</title>
+    <script type="module" src="./src/script/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main_timer">00:00</div>
+      <div class="control">
+        <button id="workout">Start workout</button>
+        <button id="main_stop">Stop</button>
+        <button id="main_reset">reset</button>
+      </div>
+    </div>
+
+    <div class="container information_box">Start Exercise</div>
+
+    <div class="container">
+      <div class="timer">00:00</div>
+
+      <div class="control_input">
+        <input type="text" name="rest" id="numRest" value="2" />
+      </div>
+
+      <div class="control">
+        <button id="rest">Rest</button>
+        <button id="stop">Stop</button>
+        <button id="reset">reset</button>
+      </div>
+    </div>
+    <div class="container checklist">
+      <h2>Workout Checklist</h2>
+      <div class="add-exercise">
+        <input type="text" id="exerciseName" placeholder="Exercise name" />
+        <input type="number" id="exerciseSets" placeholder="Sets" min="1" />
+        <input type="number" id="exerciseReps" placeholder="Reps" min="1" />
+        <button id="addExercise">Add</button>
+      </div>
+      <ul id="exerciseList"></ul>
+    </div>
+  </body>
+</html>

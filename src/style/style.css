@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px 0;
+  width: 350px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.main_timer,
+.timer {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.control button,
+.add-exercise button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  margin: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.control button:hover,
+.add-exercise button:hover {
+  background: #0056b3;
+}
+
+.control_input input,
+.add-exercise input {
+  padding: 6px;
+  margin: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100px;
+  text-align: center;
+}
+
+.information_box {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.checklist h2 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+#exerciseList {
+  list-style: none;
+  padding: 0;
+}
+
+#exerciseList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  margin: 6px 0;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.exercise-info {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.sets {
+  display: flex;
+  gap: 5px;
+}
+
+.sets input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
